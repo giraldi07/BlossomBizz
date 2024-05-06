@@ -1,0 +1,176 @@
+.about-page {
+  background-image: url(/public/images/bg-med.jpg);
+  background-size: cover;
+
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+p {
+  color: rgb(218, 218, 218);
+}
+ h3 {
+  color: #7E6DC7;
+ }
+
+h4 {
+  color: #7E6DC7;
+}
+
+.image-abt {
+  display: flex; 
+  justify-content: center; 
+  overflow-x: hidden;
+  background-image: url("/public/images/art-pattren-small.png");
+  background-size: contain;
+}
+
+.image-abt img {
+  width: 1017px;
+  height: auto;
+  transition: transform 0.3s ease;
+ 
+ 
+}
+
+
+
+.judul-abt,
+.paragraf-abt,
+.vis-mis,
+.identity {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.paragraf-abt p,
+.vis-mis p,
+.identity p {
+  line-height: 1.5;
+  
+}
+
+.paragraf-abt {
+ 
+  margin-bottom: 40px;
+}
+
+.vis-mision .vision,
+.vis-mision .mission {
+  margin: 20px 0;
+}
+
+.vis-mis {
+  margin-top: 200px;
+}
+
+.identity {
+  margin-top: 200px;
+}
+
+.identity .logo-identity,
+.identity .color-of-logo,
+.identity .color-of-design,
+.identity .meaning-of-color {
+  margin-top: 50px;
+  margin-bottom: 90px;
+  background-image: url("/public/images/art-pattren-small.png");
+  background-size: 500px;
+}
+
+.identity .logo-identity img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.identity .logo-identity img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-env .light-env img:hover,
+.container-env .dark-env img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-env {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.container-env .light-env {
+  margin-right: 25px;
+  justify-content: center;
+}
+
+
+.container-env .light-env img,
+.container-env .dark-env img {
+  width: 150px;
+  height: auto;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.identity .color-of-design img,
+.identity .meaning-of-color img {
+  width: 500px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.identity .color-of-design img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+  .image-abt img {
+    width: 100%;
+  }
+
+  .paragraf-abt,
+  .vis-mis,
+  .identity {
+    max-width: 90%;
+  }
+
+  .identity .color-of-design img,
+  .identity .meaning-of-color img {
+    width: 200px;
+    height: auto;
+  }
+
+  .container-env .light-env img,
+  .container-env .dark-env img {
+    width: 100px;
+
+  }
+}
+
+
+/* Animasi masuk */
+.about-page {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

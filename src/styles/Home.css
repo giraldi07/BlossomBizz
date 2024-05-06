@@ -1,0 +1,278 @@
+.container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+
+.sosial-media {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+
+.sm-button {
+    margin-right: 25px;
+    transition: 0.3s ease;
+
+}
+
+.sm-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sm-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.joinButton {
+  background-color: #090076;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.joinButton:hover {
+  background-color: #06004c;
+}
+
+.container-btn {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-btn .joinButton {
+
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+
+
+
+.judul h1 {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(215, 215, 2);
+    margin-bottom: 10px;
+}
+
+
+.img-textuality img {
+    width: 419px;
+    height: auto;
+}
+
+
+.slogan h3 {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.882);
+    margin-top: 5px;
+}
+
+.slogan p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #b6fff6b3;
+    letter-spacing: 0px;
+}
+
+.home-image img {
+    margin-right: 25px;
+    width: 605px;
+    height: auto;
+}
+
+
+
+.greeting-text {
+    margin-top: 1%;
+}
+
+/* transisi saat loading */
+.home {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+
+.home.show {
+  opacity: 1;
+  
+}
+
+.home-image {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.home-image.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.home-image:hover {
+    transform: scale(1.1) translateX(-10%);
+}
+
+.greeting-text {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.greeting-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 1350px) {
+    .greeting-text h1 {
+        font-size: 28px;
+    }
+
+    .slogan h3 {
+        font-size: 24px;
+    }
+
+    .slogan p {
+        font-size: 18px;
+    }
+
+    .img-textuality img {
+        width: 200px;
+        height: auto;
+    }
+
+    .home-image img {
+        width: 500px;
+        height: auto;
+    }
+
+    .container-btn {
+        margin-top: 1%;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+ 
+    }
+
+    .joinButton {
+        padding: 1% 40px;
+        font-size: 16px;
+
+    }
+}
+
+
+
+
+
+@media (max-width: 1080px) {
+
+    .judul h1 {
+
+        font-size: 24px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .slogan h3 {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .slogan p {
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 1%;
+    }
+
+    .img-textuality img {
+        width: 219px;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .img-textuality {
+        align-content: center;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 314px;
+        height: 236px;
+  
+    }
+
+    .greeting-text {
+        margin-top: 5%;
+    }
+
+    .home-image {
+        order: -1;
+    }
+
+    .joinButton {
+
+        font-size: 16px;
+        margin-bottom: 20px;
+
+    }
+
+    .home-image:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 786px) {
+    .container-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-btn .joinButton {
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 1%;
+    }
+
+}

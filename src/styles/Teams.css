@@ -1,0 +1,161 @@
+.container-teams {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("/public/images/patrent-grid.png");
+    background-size: cover;
+}
+
+.content-teams {
+    flex: 1;
+    padding: 20px;
+}
+
+.container-teams h3 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.image-teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+.image-teams > div {
+    text-align: center;
+}
+
+.image-teams img {
+    width: 100%;
+    border-radius: 5%;
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-teams img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-teams h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.image-teams p {
+    margin: 0;
+}
+
+
+
+.brandty img {
+    width: 250px;
+    height: auto;
+}
+
+.contact-info h3 {
+  text-align: left;
+}
+
+
+
+.contact-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+
+  
+  .contact-info,
+  .newsletter {
+    max-width: 90%;
+  }
+  
+  .contact-info h3,
+  .newsletter h3 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .brandty {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .brandty img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .newsletter input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #f04;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .newsletter button[type="submit"]:hover {
+    background-color: #d03;
+  }
+
+@media screen and (max-width: 768px) {
+    .image-teams {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .contact-info h3 {
+      text-align: center;
+    }
+
+}
+
+  @media (max-width: 768px) {
+    .contact-newsletter {
+      flex-direction: column;
+ 
+    }
+    .contact-info,
+    .brandty,
+    .newsletter {
+      max-width: 100%;
+      margin-bottom: 20px;
+      
+    }
+
+    .contact-info p {
+    
+      text-align: center;
+    }
+  }
