@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Teams from "./pages/Teams";
 import Partner from "./pages/Partner";
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/partner" element={<Partner />} />
         </Routes>
       </div>
+       <Analytics />
     </Router>
   );
 }
