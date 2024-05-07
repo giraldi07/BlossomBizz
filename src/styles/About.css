@@ -22,16 +22,18 @@ h4 {
   display: flex; 
   justify-content: center; 
   overflow-x: hidden;
-  background-image: url("/public/images/art-pattren-small.png");
-  background-size: contain;
+
 }
 
 .image-abt img {
   width: 1017px;
   height: auto;
   transition: transform 0.3s ease;
- 
- 
+}
+
+.sub-container-abt {
+  background-image: url("/public/images/art-pattren-small.png");
+  background-size:auto;
 }
 
 
@@ -77,8 +79,7 @@ h4 {
 .identity .meaning-of-color {
   margin-top: 50px;
   margin-bottom: 90px;
-  background-image: url("/public/images/art-pattren-small.png");
-  background-size: 500px;
+
 }
 
 .identity .logo-identity img {
